@@ -1,0 +1,9 @@
+config.php
+/uploads/avatars/*
+!/uploads/avatars/.gitkeep
+/storage/*
+!/storage/.gitkeep
+!/storage/.htaccess
+.DS_Store
+/tests/shots/
+/tests/guia.pdf

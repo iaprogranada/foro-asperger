@@ -1,0 +1,5 @@
+# En esta carpeta solo hay imágenes. Nunca se ejecuta código.
+<FilesMatch "\.(php\d?|phtml|phar|pl|py|cgi|sh)$">
+  Require all denied
+</FilesMatch>
+Options -ExecCGI -Indexes
