@@ -1,0 +1,32 @@
+{
+  "v": 3,
+  "createdOnFiles": { "v": 1, "at": "2026-11-18T12:00:00Z" },
+  "title": "Foro Asperger — foroasperger.com",
+  "launch": { "view": "canvas" },
+  "pages": [],
+  "boards": {
+    "Main.dc.html": { "x": 0, "y": 0, "w": 1440, "h": 3800, "title": "Portada", "expand": "fill", "is_interactive": true },
+    "Foro.dc.html": { "x": 1520, "y": 0, "w": 1440, "h": 1900, "title": "Foro y subforos", "expand": "fill", "is_interactive": true },
+    "Hilo.dc.html": { "x": 3040, "y": 0, "w": 1440, "h": 2400, "title": "Hilo de conversación", "expand": "fill", "is_interactive": true },
+    "Recursos.dc.html": { "x": 4560, "y": 0, "w": 1440, "h": 2200, "title": "Recursos descargables", "expand": "fill", "is_interactive": true },
+    "Amor.dc.html": { "x": 0, "y": 4220, "w": 1440, "h": 2800, "title": "Amor neurodivergente", "expand": "fill", "is_interactive": true },
+    "Profesionales.dc.html": { "x": 1520, "y": 4220, "w": 1440, "h": 2750, "title": "Zona de profesionales (de pago)", "expand": "fill", "is_interactive": true },
+    "Registro.dc.html": { "x": 3040, "y": 4220, "w": 1440, "h": 1500, "title": "Crear cuenta", "expand": "fill", "is_interactive": true },
+    "Perfil.dc.html": { "x": 4560, "y": 4220, "w": 1440, "h": 2000, "title": "Mi perfil (zona privada)", "expand": "fill", "is_interactive": true }
+  },
+  "order": [
+    "Main.dc.html",
+    "Foro.dc.html",
+    "Hilo.dc.html",
+    "Recursos.dc.html",
+    "Amor.dc.html",
+    "Profesionales.dc.html",
+    "Registro.dc.html",
+    "Perfil.dc.html"
+  ],
+  "notes": {
+    "t1": { "x": 0, "y": -300, "text": "Portada, foros y recursos", "kind": "title1", "maxW": 6000 },
+    "t2": { "x": 0, "y": 3920, "text": "Comunidad, profesionales y zona privada", "kind": "title1", "maxW": 6000 }
+  },
+  "designSystems": []
+}

@@ -58,6 +58,7 @@ assets/              Estilos, JavaScript e icono
 uploads/avatars/     Fotos de perfil
 storage/             Archivos de recursos y registros (no accesible desde la web)
 tests/e2e.js         Prueba de extremo a extremo con Playwright
+docs/                Diseño fuente, capturas y notas del proyecto (no accesible desde la web)
 ```
 
 Para cambiar los foros después de instalar, edita la tabla `forums` (por ejemplo con phpMyAdmin). Los colores disponibles son `mint`, `sky`, `green`, `amber`, `coral`, `pink`, `lav` y `sand`; los iconos están en `app/icons.php`.

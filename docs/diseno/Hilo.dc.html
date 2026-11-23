@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Foro Asperger · Hilo de conversación</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lexend:wght@400;500;600;700;800&display=swap">
+<style>
+body{margin:0}
+a{color:#145C63}a:hover{color:#0C3F45}
+svg{fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;flex:none}
+a:focus-visible,button:focus-visible,textarea:focus-visible{outline:3px solid #1E2A32;outline-offset:3px}
+</style>
+</helmet>
+<div style="filter: {{calmFilter}}">
+<div style="min-height: 100vh; display: flex; flex-direction: column; background: #F5F6F2; color: #1E2A32; font-family: 'Atkinson Hyperlegible', Verdana, system-ui, sans-serif; font-size: 17px; line-height: 1.5">
+
+<header style="background: #FCFCFA; border-bottom: 2px solid #DDE2DC">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px">
+    <a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #1E2A32">
+      <span style="width: 46px; height: 46px; border-radius: 15px; background: #F2B84B; display: flex; align-items: center; justify-content: center">
+        <svg width="32" height="32" viewBox="0 0 24 24" stroke-width="2.2" aria-hidden="true"><path d="M7 8.5C5 8.5 3.5 10.1 3.5 12S5 15.5 7 15.5c3.5 0 6.5-7 10-7 2 0 3.5 1.6 3.5 3.5S19 15.5 17 15.5c-3.5 0-6.5-7-10-7z"/></svg>
+      </span>
+      <span style="font-family: Lexend, 'Trebuchet MS', sans-serif; font-weight: 800; font-size: 21px; letter-spacing: -0.01em">foro<span style="color: #145C63">asperger</span></span>
+    </a>
+    <nav aria-label="Principal" style="display: flex; flex-wrap: wrap; gap: 6px; flex: 1 1 auto">
+      <a href="Foro.dc.html" aria-current="page" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 14px; text-decoration: none; color: #0B4A40; background: #CDEEE4; font-weight: 700">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-9l-5 4v-4H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/></svg>Foros</a>
+      <a href="Recursos.dc.html" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 14px; text-decoration: none; color: #1E2A32; font-weight: 700">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5M12 11v6M9.500 14.500 12 17l2.500-2.500"/></svg>Recursos</a>
+      <a href="Amor.dc.html" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 14px; text-decoration: none; color: #1E2A32; font-weight: 700">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.400-7-10a4 4 0 0 1 7-2.500A4 4 0 0 1 19 10c0 5.600-7 10-7 10z"/></svg>Amor neurodivergente</a>
+      <a href="Profesionales.dc.html" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 14px; text-decoration: none; color: #1E2A32; font-weight: 700">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.500-3 8.300-7 10-4-1.700-7-5.500-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>Profesionales</a>
+    </nav>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+      <button type="button" onClick="{{toggleCalm}}" aria-pressed="{{calmPressed}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 14px; border: 2px solid #C9D1CB; background: #F5F6F2; color: #1E2A32; font: inherit; font-weight: 700; cursor: pointer">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.500A8 8 0 0 1 9.500 4a8 8 0 1 0 10.500 10.500z"/></svg>{{calmLabel}}</button>
+      <a href="Perfil.dc.html" style="display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 14px 0 6px; border-radius: 999px; border: 2px solid #C9D1CB; background: #FCFCFA; text-decoration: none; color: #1E2A32; font-weight: 700">
+        <span style="width: 34px; height: 34px; border-radius: 50%; background: #DFDCF8; color: #45389A; display: flex; align-items: center; justify-content: center; font-family: Lexend, sans-serif; font-size: 14px">CH</span>Mi perfil</a>
+    </div>
+  </div>
+</header>
+
+<main style="max-width: 1240px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 20px 24px 64px; display: flex; flex-direction: column; gap: 24px">
+
+  <nav aria-label="Ruta" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-weight: 700; font-size: 16px">
+    <a href="Main.dc.html" style="min-height: 44px; display: flex; align-items: center">Inicio</a>
+    <svg width="16" height="16" viewBox="0 0 24 24" stroke-width="2.4" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    <a href="Foro.dc.html" style="min-height: 44px; display: flex; align-items: center">Asperger</a>
+    <svg width="16" height="16" viewBox="0 0 24 24" stroke-width="2.4" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    <a href="Foro.dc.html" style="min-height: 44px; display: flex; align-items: center">Presentaciones</a>
+  </nav>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+
+    <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h1 style="margin: 0; font-family: Lexend, sans-serif; font-weight: 800; font-size: clamp(1.8rem, 3.2vw, 2.5rem); line-height: 1.15; letter-spacing: -0.02em; text-wrap: balance">Me diagnosticaron con 41 años. ¿Por dónde empiezo?</h1>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 16px">
+          <span style="padding: 4px 12px; border-radius: 10px; background: #FBE7B8; color: #5C3E00; font-weight: 700">Presentaciones</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; color: #33414A; font-weight: 700"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-9l-5 4v-4H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/></svg>18 respuestas</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; color: #33414A; font-weight: 700"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M12 7.500V12l3 2"/></svg>Abierto hace 2 días</span>
+        </div>
+      </div>
+
+      <article style="background: #FCFCFA; border: 2px solid #DDE2DC; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px">
+          <span style="width: 60px; height: 60px; border-radius: 50%; background: #CDEEE4; color: #0B4A40; display: flex; align-items: center; justify-content: center; font-family: Lexend, sans-serif; font-weight: 700; font-size: 19px; flex: none">NA</span>
+          <div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column">
+            <span style="font-family: Lexend, sans-serif; font-weight: 700; font-size: 19px">Nacho_41</span>
+            <span style="font-size: 15px; color: #33414A">Asperger · Zaragoza · se unió este mes</span>
+          </div>
+          <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 12px; background: #D3E8F8; color: #14425F; font-weight: 700; font-size: 15px">
+            <svg width="18" height="18" viewBox="0 0 24 24" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.300-1 .900-1 1.700M12 17h.01"/></svg>Tono: pregunta sincera</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; font-size: 18px; line-height: 1.6; max-width: 40em">
+          <p style="margin: 0">Hola. Me llamo Nacho y tengo 41 años. La semana pasada recibí el diagnóstico de autismo (antes se llamaba síndrome de Asperger).</p>
+          <p style="margin: 0">Ahora entiendo muchas cosas de mi vida. También estoy cansado y un poco perdido.</p>
+          <p style="margin: 0"><strong>Mi pregunta:</strong> ¿qué hicisteis vosotros durante las primeras semanas después del diagnóstico?</p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding-top: 6px; border-top: 2px solid #EDF0EC">
+          <button type="button" aria-pressed="false" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 14px; border: 2px solid #9DD6C5; background: #CDEEE4; color: #0B4A40; font: inherit; font-weight: 700; cursor: pointer; margin-top: 12px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg>Me ayuda · 12</button>
+          <button type="button" aria-pressed="true" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 14px; border: 2px solid #45389A; background: #DFDCF8; color: #372C80; font: inherit; font-weight: 700; cursor: pointer; margin-top: 12px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.300 2.700-6 6-6s6 2.700 6 6"/><circle cx="17" cy="9" r="2.300"/><path d="M16.500 14.200c2.700.300 4.500 2.600 4.500 5.800"/></svg>Me pasa igual · 23</button>
+          <button type="button" aria-pressed="false" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 14px; border: 2px solid #E6B0D3; background: #F6D9EC; color: #6E2356; font: inherit; font-weight: 700; cursor: pointer; margin-top: 12px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.400-7-10a4 4 0 0 1 7-2.500A4 4 0 0 1 19 10c0 5.600-7 10-7 10z"/></svg>Te mando ánimo · 9</button>
+          <span style="flex: 1 1 auto"></span>
+          <button type="button" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 12px; border-radius: 14px; border: 0; background: transparent; color: #33414A; font: inherit; font-weight: 700; cursor: pointer; margin-top: 12px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg>Guardar</button>
+          <button type="button" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 12px; border-radius: 14px; border: 0; background: transparent; color: #33414A; font: inherit; font-weight: 700; cursor: pointer; margin-top: 12px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>Avisar a moderación</button>
+        </div>
+      </article>
+
+      <section aria-labelledby="resumen" style="background: #CDEEE4; border: 2px solid #9DD6C5; border-radius: 28px; padding: 24px 28px; display: flex; flex-direction: column; gap: 12px">
+        <h2 id="resumen" style="margin: 0; display: flex; align-items: center; gap: 10px; font-family: Lexend, sans-serif; font-weight: 700; font-size: 20px"><svg width="26" height="26" viewBox="0 0 24 24" style="color: #0F5F52" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h13"/></svg>Resumen del hilo</h2>
+        <ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 6px; font-size: 17px">
+          <li>Date tiempo. Es normal sentir alivio y tristeza a la vez.</li>
+          <li>Lee experiencias de otras personas con diagnóstico tardío.</li>
+          <li>Apunta qué situaciones te cansan y cuáles te dan energía.</li>
+        </ul>
+      </section>
+
+      <h2 style="margin: 8px 0 0; font-family: Lexend, sans-serif; font-weight: 800; font-size: 24px">Respuestas</h2>
+
+      <article style="background: #FCFCFA; border: 2px solid #DDE2DC; border-radius: 28px; padding: 24px 28px; display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px">
+          <span style="width: 52px; height: 52px; border-radius: 50%; background: #F6D9EC; color: #6E2356; display: flex; align-items: center; justify-content: center; font-family: Lexend, sans-serif; font-weight: 700; flex: none">LG</span>
+          <div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column">
+            <span style="font-family: Lexend, sans-serif; font-weight: 700; font-size: 18px">LauraG</span>
+            <span style="font-size: 15px; color: #33414A">Autista · Valencia · hace 2 días</span>
+          </div>
+          <span style="padding: 8px 14px; border-radius: 12px; background: #EDF0EC; color: #33414A; font-weight: 700; font-size: 15px">Tono: lo digo en serio</span>
+        </div>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; max-width: 40em">A mí me diagnosticaron con 36 años. Las primeras semanas no hice nada especial: descansé y leí. Después escribí una lista de cosas que quería cambiar en casa y en el trabajo. Me ayudó mucho ir poco a poco.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px">
+          <button type="button" aria-pressed="false" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 14px; border: 2px solid #9DD6C5; background: #CDEEE4; color: #0B4A40; font: inherit; font-weight: 700; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg>Me ayuda · 15</button>
+          <button type="button" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 14px; border: 2px solid #C9D1CB; background: #FCFCFA; color: #1E2A32; font: inherit; font-weight: 700; cursor: pointer">Responder a LauraG</button>
+        </div>
+      </article>
+
+      <article style="background: #FCFCFA; border: 2px solid #E9CC84; border-radius: 28px; padding: 24px 28px; display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px">
+          <span style="width: 52px; height: 52px; border-radius: 50%; background: #FBE7B8; color: #5C3E00; display: flex; align-items: center; justify-content: center; font-family: Lexend, sans-serif; font-weight: 700; flex: none">MR</span>
+          <div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column">
+            <span style="font-family: Lexend, sans-serif; font-weight: 700; font-size: 18px">Marta Ruiz</span>
+            <span style="font-size: 15px; color: #33414A">Psicóloga sanitaria · Madrid · hace 1 día</span>
+          </div>
+          <a href="Profesionales.dc.html" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 12px; background: #F2B84B; color: #1E2A32; font-weight: 700; font-size: 15px; text-decoration: none"><svg width="18" height="18" viewBox="0 0 24 24" stroke-width="2.2" aria-hidden="true"><path d="M12 3l7 3v5c0 4.500-3 8.300-7 10-4-1.700-7-5.500-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>Profesional verificada</a>
+        </div>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; max-width: 40em">Hola, Nacho. Lo que cuentas es muy frecuente tras un diagnóstico en la edad adulta. Una idea práctica: durante dos semanas, anota cada día tu nivel de energía del 1 al 5. Esa información te servirá para decidir qué apoyos pedir.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px">
+          <button type="button" aria-pressed="false" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 14px; border: 2px solid #9DD6C5; background: #CDEEE4; color: #0B4A40; font: inherit; font-weight: 700; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg>Me ayuda · 21</button>
+          <button type="button" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 14px; border: 2px solid #C9D1CB; background: #FCFCFA; color: #1E2A32; font: inherit; font-weight: 700; cursor: pointer">Responder a Marta</button>
+        </div>
+      </article>
+
+      <section aria-labelledby="responder" style="background: #FCFCFA; border: 2px solid #145C63; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+        <h2 id="responder" style="margin: 0; font-family: Lexend, sans-serif; font-weight: 800; font-size: 24px">Escribe tu respuesta</h2>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <label for="respuesta" style="font-weight: 700">Tu mensaje</label>
+          <textarea id="respuesta" rows="5" placeholder="Escribe aquí. Las frases cortas se leen mejor." style="box-sizing: border-box; width: 100%; padding: 16px; border-radius: 18px; border: 2px solid #8A969D; background: #F5F6F2; color: #1E2A32; font: inherit; font-size: 18px; line-height: 1.5; resize: vertical"></textarea>
+        </div>
+        <fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 10px">
+          <legend style="padding: 0; font-weight: 700; margin-bottom: 10px">¿Con qué tono lo dices? Así nadie tiene que adivinarlo.</legend>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px">
+            <button type="button" aria-pressed="true" style="min-height: 48px; padding: 0 18px; border-radius: 14px; border: 2px solid #1E2A32; background: #1E2A32; color: #FCFCFA; font: inherit; font-weight: 700; cursor: pointer">Lo digo en serio</button>
+            <button type="button" aria-pressed="false" style="min-height: 48px; padding: 0 18px; border-radius: 14px; border: 2px solid #C9D1CB; background: #FCFCFA; color: #1E2A32; font: inherit; font-weight: 700; cursor: pointer">Es una broma</button>
+            <button type="button" aria-pressed="false" style="min-height: 48px; padding: 0 18px; border-radius: 14px; border: 2px solid #C9D1CB; background: #FCFCFA; color: #1E2A32; font: inherit; font-weight: 700; cursor: pointer">Es una pregunta sincera</button>
+            <button type="button" aria-pressed="false" style="min-height: 48px; padding: 0 18px; border-radius: 14px; border: 2px solid #C9D1CB; background: #FCFCFA; color: #1E2A32; font: inherit; font-weight: 700; cursor: pointer">Solo quiero desahogarme</button>
+          </div>
+        </fieldset>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px">
+          <button type="button" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 28px; background: #145C63; color: #FCFCFA; border: 0; border-radius: 18px; font-family: Lexend, sans-serif; font-weight: 600; font-size: 18px; cursor: pointer; box-shadow: 0 6px 0 #0C3F45">Publicar respuesta</button>
+          <button type="button" style="min-height: 56px; padding: 0 24px; background: #FCFCFA; color: #1E2A32; border: 2px solid #C9D1CB; border-radius: 18px; font-family: Lexend, sans-serif; font-weight: 600; font-size: 18px; cursor: pointer">Guardar borrador</button>
+          <span style="color: #33414A; font-size: 16px">Puedes editar tu mensaje después de publicarlo.</span>
+        </div>
+      </section>
+    </div>
+
+    <aside style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+      <div style="background: #FCFCFA; border: 2px solid #DDE2DC; border-radius: 26px; padding: 24px; display: flex; flex-direction: column; gap: 6px">
+        <h2 style="margin: 0 0 8px; font-family: Lexend, sans-serif; font-weight: 700; font-size: 20px">Hilos parecidos</h2>
+        <a href="Hilo.dc.html" style="min-height: 44px; display: flex; align-items: center; font-weight: 700; line-height: 1.35; padding: 6px 0">Diagnóstico a los 50: mi experiencia</a>
+        <a href="Hilo.dc.html" style="min-height: 44px; display: flex; align-items: center; font-weight: 700; line-height: 1.35; padding: 6px 0">¿Se lo habéis contado a vuestra familia?</a>
+        <a href="Hilo.dc.html" style="min-height: 44px; display: flex; align-items: center; font-weight: 700; line-height: 1.35; padding: 6px 0">Libros que me ayudaron a entenderme</a>
+      </div>
+      <div style="background: #DCEFC9; border: 2px solid #B9D99C; border-radius: 26px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+        <span style="width: 52px; height: 52px; border-radius: 16px; background: #FCFCFA; color: #3B6219; display: flex; align-items: center; justify-content: center"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5M12 11v6M9.500 14.500 12 17l2.500-2.500"/></svg></span>
+        <h2 style="margin: 0; font-family: Lexend, sans-serif; font-weight: 700; font-size: 20px; line-height: 1.25">Recurso relacionado</h2>
+        <p style="margin: 0; font-size: 16px">Guía «Primeros pasos después del diagnóstico», en PDF.</p>
+        <a href="Recursos.dc.html" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; background: #2F5212; color: #FCFCFA; border-radius: 14px; font-family: Lexend, sans-serif; font-weight: 600; text-decoration: none">Ver la guía</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer style="margin-top: auto; background: #1E2A32; color: #E4E9E5">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 48px">
+    <span style="font-family: Lexend, sans-serif; font-weight: 800; font-size: 20px; color: #FCFCFA">foro<span style="color: #F2B84B">asperger</span>.com</span>
+    <nav aria-label="Pie de página" style="display: flex; flex-wrap: wrap; gap: 8px 28px; font-weight: 700">
+      <a href="#" style="color: #FCFCFA; min-height: 44px; display: flex; align-items: center">Normas de la comunidad</a>
+      <a href="#" style="color: #FCFCFA; min-height: 44px; display: flex; align-items: center">Accesibilidad</a>
+      <a href="#" style="color: #FCFCFA; min-height: 44px; display: flex; align-items: center">Privacidad</a>
+      <a href="#" style="color: #FCFCFA; min-height: 44px; display: flex; align-items: center">Contacto</a>
+    </nav>
+  </div>
+</footer>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2400}}'>
+class Component extends DCLogic {
+  state = { calm: false };
+  renderVals() {
+    const calm = !!this.state.calm;
+    return {
+      calmFilter: calm ? 'saturate(0.2)' : 'none',
+      calmLabel: calm ? 'Modo calma: activado' : 'Modo calma',
+      calmPressed: calm ? 'true' : 'false',
+      toggleCalm: () => this.setState({ calm: !calm })
+    };
+  }
+}
+</script>
+</body>
+</html>
